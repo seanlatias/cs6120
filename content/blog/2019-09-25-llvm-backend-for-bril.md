@@ -37,7 +37,7 @@ b2:
 
  3. Dump LLVM code and run through the code with LLVM execution engine and compare the output with the ground truth produced by Bril interpreter. The execution engine will run the LLVM program with JIT. And we will evaluate the program's correctness with ground truth produced by Bril interpreter. 
 
-### Implementing details
+### Implementation details
 
  In this section, we briefly describe the implementation details for each step in LLVM code generation process. To get a global knowledge of how different components are linked and executed in the program, we need a data structure recording of basic blocks and the actual values each instruction is taking. Here is a list of the data structure we created. Basically we categorize them into two classes: one is for block level and another for instruction level.
 
